@@ -1,0 +1,42 @@
+1.Create an empty project & add in the details 
+
+
+2.Add dependencies(to pom.xml):
+
+<!-- ... -->
+        <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+        </dependency>
+<!-- ... -->
+
+
+3.create new folders (webapp/WEB-INF/) in src/main & add .jsp files (index.jsp, ___.jsp, etc.)
+                      
+
+4.Edit the src/main/resources/applications.properties file to contain the following code:
+spring.mvc.view.prefix: /WEB-INF/
+
+
+5.put code in index.jsp:
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+    
+
+6.right click project name>>> run as>>>Spring Boot App to start server
+
+7.add @RestController and @RequestMapping("/") annotations in application file & create "hello World"
+
+8.right click project name>>> run as>>>Spring Boot App to start server
+
+9. test localhost
+
+10. delete annotations & in (src/main/java), create a new package(.controller) & new class (HomeController) linked to index
+
+
+8. test localhost
+
+
