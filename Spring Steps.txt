@@ -26,15 +26,14 @@ spring.mvc.view.prefix: /WEB-INF/
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
     
 
-6.right click project name>>> run as>>>Spring Boot App to start server
 
-7.add @RestController and @RequestMapping("/") annotations in application file & create "hello World"
+6.add @RestController and @RequestMapping("/") annotations in application file & create "hello World"
 
-8.right click project name>>> run as>>>Spring Boot App to start server
+7.right click project name>>> run as>>>Spring Boot App to start server
 
-9. test localhost
+8. test localhost
 
-10. delete annotations & in (src/main/java), create a new package(.controller) & new class (HomeController) linked to index
+9. delete annotations & in (src/main/java), create a new package(.controller) & new class (HomeController) linked to index
 
 
 8. test localhost
