@@ -15,6 +15,14 @@
 	</head>
 
 	<body>
+	
+	
+	
+	
+	
+	
+	
+	
 		<a href="/logout">Logout!</a>
 
 		<h1>Welcome!</h1>

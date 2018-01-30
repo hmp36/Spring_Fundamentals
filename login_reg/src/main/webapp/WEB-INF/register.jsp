@@ -14,26 +14,60 @@
 	<h1>Register!</h1>
 
 	<p>
-		<form:errors path="user.*" />
+		<form:errors path="user.*" />  <!-- /what is this?  -->
 	</p>
 
 	<form:form method="POST" action="/registration" modelAttribute="user">
 		<p>
-			<form:label path="Firstname">First Name:</form:label>
-			<form:input path="Firstname" />
+			<form:label path="FirstName">First Name:</form:label>
+			<form:input path="FirstName" />
 		</p>
-			<form:label path="Lastname">Last Name:</form:label>
-			<form:input path="Lastname" />
+		<p>
+			<form:label path="LastName">Last Name:</form:label>
+			<form:input path="LastName" />
+		</p>
+		<p>
+			<form:label path="Email">Email:</form:label>
+			<form:input path="Email" />
+		</p>
+		<p>
+			<form:label path="City">City:</form:label>
+			<form:input path="City" />
+		</p>
+		<p>
+			<form:label path="State">State:</form:label>
+			<form:input path="State" />
+		</p>
 		<p>
 			<form:label path="password">Password:</form:label>
 			<form:password path="password" />
 		</p>
 		<p>
-			<form:label path="passwordConfirmation">Password Confirmation:</form:label>
+			<form:label path="passwordConfirmation">PW Confirm:</form:label>
 			<form:password path="passwordConfirmation" />
 		</p>
 		<input type="submit" value="Register!" />
 	</form:form>
+	
+	<%-- <form:form method="Post" action="/login" modelAttribute="User">
+	    <p>
+			<form:label path="Email">Email:</form:label>
+			<form:input path="Email" />
+		</p>
+		<p>
+			<form:label path="password">Password:</form:label>
+			<form:password path="password" />
+		</p>
+		<input type="submit" value="Login" />
+	</form:form> --%>
+		
+		
+	
+	
+	
+	
+	
+	
 </body>
 
 </html>

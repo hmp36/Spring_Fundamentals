@@ -23,8 +23,19 @@ public class User{
     @Id
     @GeneratedValue
     private Long id;
-    private String firstname;
-    private String lastname;
+    @Size(min=1,max=255,message="First name must be between 1-255 characters")
+    private String firstName;
+    @Size(min=1,max=255,message="Last name must be between 1-255 characters")
+    private String lastName;
+    
+    
+    
+    @Size(min=1,max=255,message="Email must be between 1-255 characters")
+    private String Email;
+    
+    
+    
+    @Size(min=1,max=255,message="Password must be between 1-255 characters")
     private String password;
     @Size(min=1,max=255,message="City must be between 1-255 characters")
     private String city;
@@ -53,20 +64,38 @@ public class User{
     public void setId(Long id) {
         this.id = id;
     }
-   
-	public String getFirstname() {
-		return firstname;
+    public String getFirstName() {
+		return firstName;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public String getLastname() {
-		return lastname;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-
+	
+	
+	public String getEmail() {
+		return Email;
+	}
+	public void setEmail(String email) {
+		Email = email;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
 	public String getPassword() {
         return password;
     }
