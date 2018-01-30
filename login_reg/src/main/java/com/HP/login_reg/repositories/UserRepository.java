@@ -7,5 +7,5 @@ import com.HP.login_reg.models.User;
 
 @Repository 												
 public interface UserRepository extends CrudRepository<User,Long>{
-	User findByUsername(String name);
+	User findByFirstname(String name);
 }
