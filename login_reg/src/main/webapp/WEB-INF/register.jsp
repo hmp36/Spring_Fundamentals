@@ -6,16 +6,29 @@
 <html>
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
 	<title>Registration Page</title>
 </head>
 
 <body>
-	<h1>Register!</h1>
-
-	<p>
+	                      <h1>Login</h1>
+<form:form method="Post" action="/login" modelAttribute="user">
+	   
+	    <p>
+			<form:label path="Email">Email:</form:label>
+			<form:input path="Email" />
+		</p>
+		<p>
+			<form:label path="password">Password:</form:label>
+			<form:password path="password" />
+		</p>
+		<input type="submit" value="Login" />
+	</form:form>
+	
+	<%-- <p>
 		<form:errors path="user.*" />  <!-- /what is this?  -->
 	</p>
+<h1>Register!</h1> --%>
 
 	<form:form method="POST" action="/registration" modelAttribute="user">
 		<p>
@@ -49,22 +62,7 @@
 		<input type="submit" value="Register!" />
 	</form:form>
 	
-	<%-- <form:form method="Post" action="/login" modelAttribute="User">
-	    <p>
-			<form:label path="Email">Email:</form:label>
-			<form:input path="Email" />
-		</p>
-		<p>
-			<form:label path="password">Password:</form:label>
-			<form:password path="password" />
-		</p>
-		<input type="submit" value="Login" />
-	</form:form> --%>
 		
-		
-	
-	
-	
 	
 	
 	

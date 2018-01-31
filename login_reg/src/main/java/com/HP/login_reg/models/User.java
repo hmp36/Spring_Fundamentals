@@ -25,22 +25,22 @@ public class User{
     private Long id;
     @Size(min=1,max=255,message="First name must be between 1-255 characters")
     private String firstName;
+   
     @Size(min=1,max=255,message="Last name must be between 1-255 characters")
     private String lastName;
-    
-    
-    
+            
     @Size(min=1,max=255,message="Email must be between 1-255 characters")
     private String Email;
-    
-    
-    
+            
     @Size(min=1,max=255,message="Password must be between 1-255 characters")
     private String password;
+    
     @Size(min=1,max=255,message="City must be between 1-255 characters")
     private String city;
+    
     @Size(min=2,max=3, message="State must be at least 2 characters")
     private String state;
+    
     @Transient
     private String passwordConfirmation;
     @Column(updatable=false)
@@ -76,8 +76,7 @@ public class User{
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
-	
+		
 	public String getEmail() {
 		return Email;
 	}

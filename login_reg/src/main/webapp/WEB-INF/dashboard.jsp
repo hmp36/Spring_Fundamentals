@@ -8,16 +8,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Index</title>
+				                     <title>Dashboard</title>
 		<link rel="stylesheet" type="text/css" href="/css/style.css">	
-		<script src="/js/main.js"></script>
+		
 	</head>
 
 	<body>
+	<h1>Welcome! ${ currentUser.firstName }</h1>
 	
-	
-	
+	<div id="userdisplay">
+		<table>
+			<tr>
+				<td>First Name: </td>
+				<td>${ currentUser.firstName }</td>
+			</tr>
+			<tr>
+				<td>Last Name: </td>
+				<td>${ currentUser.lastName }</td>
+			</tr>
+			<tr>
+				<td>Email: </td>
+				<td>${ currentUser.email }</td>
+			</tr>
+			<tr>
+				<td>Signup Date: </td>
+				<td>${ createdAt }</td>
+			</tr>
+			<tr>
+				<td>Last Sign In: </td>
+				<td>${ updatedAt }</td>
+			</tr>
+		</table>
+	</div>
 	
 	
 	
@@ -25,6 +47,6 @@
 	
 		<a href="/logout">Logout!</a>
 
-		<h1>Welcome!</h1>
+		
 	</body>
 </html>
