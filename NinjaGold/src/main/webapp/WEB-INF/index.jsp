@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="page">
-      <h1>Ninja Gold <span id="version">2.5</span></h1>
+      <h1>Ninja Gold <span id="version">7</span></h1>
       <p>Made with Java</p>
       <h3>Your Gold:
           <span>$</span>
